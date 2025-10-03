@@ -1,7 +1,24 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
 *{
     padding: 0;
     margin: 0;
 }
+ul, ol, li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    box-sizing: border-box;
+}
 body{
-    background-color: palegoldenrod;
+    font-family: 'Poppins', sans-serif;
+}
+.desktop {
+    display: none;
 }
