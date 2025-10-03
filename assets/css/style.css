@@ -2,23 +2,258 @@
     font-family: 'Poppins';
     src: url('../fonts/Poppins/Poppins-Regular.ttf');
 }
-*{
+
+:root {
+    --orange: #FF9801;
+    --rouge: #F54337;
+    --jaune-deg: #D2BE0F;
+    --vert: #4CB050;
+    --bleu: #2196F3;
+    --jaune-mieux: #FEC108;
+    --bleu-clair: #01BCD5;
+    --blanc: #FDF6E6;
+    --gris: #757575;
+    --fushia: #EA1E63;
+}
+
+* {
     padding: 0;
     margin: 0;
 }
-ul, ol, li {
+
+ul,
+ol,
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-img{
+
+img {
     width: 100%;
-    box-sizing: border-box;
+     vertical-align: bottom;
 }
-body{
+h2 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+h3 {
+    font-size: 37px;
+}
+p {
+    font-size: 16px;
+}
+table, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    border-collapse: collapse;
+}
+body {
     font-family: 'Poppins', sans-serif;
 }
+
 .desktop {
     display: none;
+}
+.fa-android {
+    color: var(--vert);
+}
+.fa-apple{
+    color: black;
+}
+.fa-windows {
+    color: var(--bleu);
+}
+
+header #buttonDownload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vert);
+    padding: 0.5rem;
+
+    text-transform: capitalize;
+}
+
+header #buttonDownload a {
+    color: var(--blanc);
+}
+
+header .buttonTour {
+    background-color: black;
+    padding: 0 .5rem .5rem .5rem;
+}
+
+header .buttonTour a {
+    color: var(--blanc);
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .buttonTour a i {
+    font-size: 10px;
+}
+#theApp {
+    padding: 5rem 1rem 3rem 1rem;
+}
+#theApp h3 {
+    color: var(--vert);
+}
+#theApp .text .description{
+    padding: 1rem 0;
+}
+#theApp .available{
+    display: flex;
+    align-items: baseline;
+}
+#theApp p span {
+    font-size: 20px;
+}
+#theApp p i {
+    font-size: 22px;
+} 
+#theApp a {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+
+    text-transform: capitalize;
+    color: black;
+    padding: 2rem;
+}
+#theApp .image {
+    padding: 0 3rem;
+}
+#clarity {
+    background-color: #F1F1F1;
+    padding: 3rem 1rem;
+}
+#clarity h3{
+    color: var(--rouge);
+}
+#clarity p {
+    padding: 1rem 0;
+}
+#clarity p span {
+    font-size: 20px;
+}
+#features {
+    background-color: #616161;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem 2rem 1rem;
+}
+#features .icons {
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#features .icons .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem .5rem;
+}
+#features .icons .icon i {
+    font-size: 60px;
+    padding-bottom: 1rem ;
+}
+.icon1 i{color: var(--orange);}
+.icon2 i{color: var(--rouge);}
+.icon3 i{color: var(--jaune-deg);}
+.icon4 i{color: var(--vert);}
+.icon5 i{color: white;}
+.icon6 i{color: var(--bleu);}
+.icon7 i{color: var(--jaune-mieux);}
+.icon8 i{color: var(--bleu-clair);}
+.icon9 i{color: var(--blanc);}
+.icon10 i{color: var(--orange);}
+.icon11 i{color: var(--gris);}
+.icon12 i{color: var(--fushia);}
+
+#pricing {
+   padding: 4rem 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+#pricing p {
+    padding: 1rem;
+}
+#pricing .tableaux {
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#pricing .tableaux .table {
+    width: 100%;
+}
+table { 
+    box-shadow: 0px 3px 5px 4px rgba(167,167,167,0.25);
+    border: none;
+}
+table thead{
+    color: white;
+}
+table thead tr th{
+    padding: 2rem;
+    font-weight: lighter;
+    font-size: 22px;
+}
+table tbody tr td {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px #DDDDDD solid;
+}
+table tbody tr td span {
+    font-weight: bold;
+}
+table tbody tr .price {
+    color: var(--gris);
+    font-size: 26px;
+    padding: 1rem 0 2rem 0;
+    border: none;
+}
+table tfoot {
+    background-color: #F1F1F1 ;
+    border-top: 1px solid #DDDDDD;
+}
+table tfoot tr td {
+     text-align: center;
+    padding: 2rem;
+}
+table tfoot tr td a{
+    color: white;
+    background-color: black;
+    padding: 1rem;
+}
+.table1 thead {
+    background-color: #616161;
+}
+.table2 thead {
+    background-color: var(--rouge);
+}
+.table2 tbody tr .price {
+    padding: 2rem;
+}
+footer {
+    background-color: #F1F1F1;
+    padding: 2rem;
+    text-align: center;
+}
+footer p {
+    padding: 1rem;
 }
